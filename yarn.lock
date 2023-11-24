@@ -29,6 +29,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@auth/core@npm:experimental":
+  version: 0.0.0-manual.e9863699
+  resolution: "@auth/core@npm:0.0.0-manual.e9863699"
+  dependencies:
+    "@panva/hkdf": ^1.0.4
+    cookie: 0.5.0
+    jose: ^4.11.1
+    oauth4webapi: ^2.0.6
+    preact: 10.11.3
+    preact-render-to-string: 5.2.3
+  peerDependencies:
+    nodemailer: ^6.8.0
+  peerDependenciesMeta:
+    nodemailer:
+      optional: true
+  checksum: 7d91989f6d0ec92379edef02ab0189942f3cf91f5d6e53f8143cd4a27b77586fed953c96a21142a3b5eec504987e1b9e42d5903631bf0482898d3f34a7a113a9
+  languageName: node
+  linkType: hard
+
 "@babel/code-frame@npm:^7.0.0, @babel/code-frame@npm:^7.22.13, @babel/code-frame@npm:^7.23.4":
   version: 7.23.4
   resolution: "@babel/code-frame@npm:7.23.4"
@@ -593,6 +612,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@panva/hkdf@npm:^1.0.4":
+  version: 1.1.1
+  resolution: "@panva/hkdf@npm:1.1.1"
+  checksum: f0dd12903751d8792420353f809ed3c7de860cf506399759fff5f59f7acfef8a77e2b64012898cee7e5b047708fa0bd91dff5ef55a502bf8ea11aad9842160da
+  languageName: node
+  linkType: hard
+
 "@pkgjs/parseargs@npm:^0.11.0":
   version: 0.11.0
   resolution: "@pkgjs/parseargs@npm:0.11.0"
@@ -942,7 +968,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/postgres@npm:^0.5.0":
+"@vercel/postgres@npm:^0.5.1":
   version: 0.5.1
   resolution: "@vercel/postgres@npm:0.5.1"
   dependencies:
@@ -1634,6 +1660,13 @@ __metadata:
   version: 2.0.0
   resolution: "convert-source-map@npm:2.0.0"
   checksum: 63ae9933be5a2b8d4509daca5124e20c14d023c820258e484e32dc324d34c2754e71297c94a05784064ad27615037ef677e3f0c00469fb55f409d2bb21261035
+  languageName: node
+  linkType: hard
+
+"cookie@npm:0.5.0":
+  version: 0.5.0
+  resolution: "cookie@npm:0.5.0"
+  checksum: 1f4bd2ca5765f8c9689a7e8954183f5332139eb72b6ff783d8947032ec1fdf43109852c178e21a953a30c0dd42257828185be01b49d1eb1a67fd054ca588a180
   languageName: node
   linkType: hard
 
@@ -3472,6 +3505,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jose@npm:^4.11.1":
+  version: 4.15.4
+  resolution: "jose@npm:4.15.4"
+  checksum: dccad91cb3357f36423774a0b89ad830dd84b31090de65cd139b85488439f16a00f8c59c0773825e8a1adb0dd9d13ad725ad66e6ea33880ecb3959bb99e1ea5b
+  languageName: node
+  linkType: hard
+
 "js-tokens@npm:^3.0.0 || ^4.0.0, js-tokens@npm:^4.0.0":
   version: 4.0.0
   resolution: "js-tokens@npm:4.0.0"
@@ -3949,6 +3989,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-auth@npm:beta":
+  version: 5.0.0-beta.3
+  resolution: "next-auth@npm:5.0.0-beta.3"
+  dependencies:
+    "@auth/core": experimental
+  peerDependencies:
+    next: ^14
+    nodemailer: ^6.6.5
+    react: ^18.2.0
+  peerDependenciesMeta:
+    nodemailer:
+      optional: true
+  checksum: a19926de25509e6dbe0f5806aac1d83577617045dc22460fd14b1793ac1c32e0c7434b276f7575c9ce0b6c2badd48b7577810e1fa066af2115e2c39f774141c0
+  languageName: node
+  linkType: hard
+
 "next@npm:^14.0.2":
   version: 14.0.3
   resolution: "next@npm:14.0.3"
@@ -4140,6 +4196,13 @@ __metadata:
     gauge: ^3.0.0
     set-blocking: ^2.0.0
   checksum: 516b2663028761f062d13e8beb3f00069c5664925871a9b57989642ebe09f23ab02145bf3ab88da7866c4e112cafff72401f61a672c7c8a20edc585a7016ef5f
+  languageName: node
+  linkType: hard
+
+"oauth4webapi@npm:^2.0.6":
+  version: 2.4.0
+  resolution: "oauth4webapi@npm:2.4.0"
+  checksum: 9e6d5be3966013aa9dd61781032a6bd07a63166a9819f2fc0d622d33b23221ea39ae25334a4bde9eba4623e576972d367b196e3b5d3facff75002125c510b672
   languageName: node
   linkType: hard
 
@@ -4589,6 +4652,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"preact-render-to-string@npm:5.2.3":
+  version: 5.2.3
+  resolution: "preact-render-to-string@npm:5.2.3"
+  dependencies:
+    pretty-format: ^3.8.0
+  peerDependencies:
+    preact: ">=10"
+  checksum: 6e46288d8956adde35b9fe3a21aecd9dea29751b40f0f155dea62f3896f27cb8614d457b32f48d33909d2da81135afcca6c55077520feacd7d15164d1371fb44
+  languageName: node
+  linkType: hard
+
+"preact@npm:10.11.3":
+  version: 10.11.3
+  resolution: "preact@npm:10.11.3"
+  checksum: 9387115aa0581e8226309e6456e9856f17dfc0e3d3e63f774de80f3d462a882ba7c60914c05942cb51d51e23e120dcfe904b8d392d46f29ad15802941fe7a367
+  languageName: node
+  linkType: hard
+
 "prelude-ls@npm:^1.2.1":
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
@@ -4670,6 +4751,13 @@ __metadata:
   bin:
     prettier: bin/prettier.cjs
   checksum: 44b556bd56f74d7410974fbb2418bb4e53a894d3e7b42f6f87779f69f27a6c272fa7fc27cec0118cd11730ef3246478052e002cbd87e9a253f9cd04a56aa7d9b
+  languageName: node
+  linkType: hard
+
+"pretty-format@npm:^3.8.0":
+  version: 3.8.0
+  resolution: "pretty-format@npm:3.8.0"
+  checksum: 21a114d43ef06978f8f7f6212be4649b0b094f05d9b30e14e37550bf35c8ca24d8adbca9e5adc4cc15d9eaf7a1e7a30478a4dc37b30982bfdf0292a5b385484c
   languageName: node
   linkType: hard
 
@@ -4968,7 +5056,7 @@ __metadata:
     "@types/node": 20.5.7
     "@types/react": 18.2.21
     "@types/react-dom": 18.2.14
-    "@vercel/postgres": ^0.5.0
+    "@vercel/postgres": ^0.5.1
     "@vercel/style-guide": ^5.0.1
     autoprefixer: 10.4.15
     bcrypt: ^5.1.1
@@ -4978,6 +5066,7 @@ __metadata:
     eslint-config-next: ^14.0.0
     eslint-config-prettier: 9.0.0
     next: ^14.0.2
+    next-auth: beta
     postcss: 8.4.31
     prettier: ^3.0.3
     prettier-plugin-tailwindcss: 0.5.4
@@ -4985,6 +5074,7 @@ __metadata:
     react-dom: 18.2.0
     tailwindcss: 3.3.3
     typescript: 5.2.2
+    use-debounce: ^10.0.0
     zod: ^3.22.2
   languageName: unknown
   linkType: soft
@@ -5804,6 +5894,15 @@ __metadata:
   dependencies:
     punycode: ^2.1.0
   checksum: 7167432de6817fe8e9e0c9684f1d2de2bb688c94388f7569f7dbdb1587c9f4ca2a77962f134ec90be0cc4d004c939ff0d05acc9f34a0db39a3c797dada262633
+  languageName: node
+  linkType: hard
+
+"use-debounce@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "use-debounce@npm:10.0.0"
+  peerDependencies:
+    react: ">=16.8.0"
+  checksum: b296fedba916ca721eeb7117f29a13c252966d03411abccc5e5894ed4de0f32b9cb6f6b150555b8b4cb9b0acf53b84022ad4cd43b89253389e9cd13779eebca7
   languageName: node
   linkType: hard
 
